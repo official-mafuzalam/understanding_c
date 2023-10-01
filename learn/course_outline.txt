@@ -1,0 +1,10 @@
+1. hello.c
+2. inout.c
+3. variable.c
+4. datatype.c 
+5. operator.c 
+
+
+6. boolean.c 
+7. ifelse.c 
+8. switch.c 
