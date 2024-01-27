@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define MAX_ITEMS 2
+#define MAX_ITEMS 99
 #define MAX_ITEM_NAME_LENGTH 500
 
 int cart_price = 0;
@@ -110,15 +110,23 @@ void mobile_func()
     printf("Total price is: %d$\n", cart_price);
 }
 
-void computer_func() {
-    char item[][MAX_ITEM_NAME_LENGTH] = {"I Phone 14 Pro Max", "Samsung S23 Ultra"};
-    int item_price[MAX_ITEMS] = {249, 299};
+void computer_func()
+{
+    char item[][MAX_ITEM_NAME_LENGTH] = {"Lenovo IdeaPad 1 14AMN7 AMD Ryzen 5 14 FHD Laptop",
+                                         "Microsoft Surface Go 3 Pentium Gold 6500Y 10.5 MultiTouch Laptop",
+                                         "HP 250 G8 Intel Celeron N4020 15.6 FHD Laptop",
+                                         "Dell Vostro 14 3400 Core i3 11th Gen 14 HD Laptop",
+                                         "Lenovo IdeaPad 1 14AMN7 AMD Ryzen 5 14 FHD Laptop",
+                                         "Asus Vivobook E210MA Celeron N4020 11.6 HD Laptop"};
+    int item_price[6] = {249, 239, 199, 179, 219, 239};
     int cart[MAX_ITEMS] = {0}; // Initialize all items in the cart to 0
 
-    while (1) {
-        printf("Choose your phone or enter -1 to exit: \n");
+    while (1)
+    {
+        printf("Choose your Laptop or enter -1 to exit: \n");
 
-        for (int i = 0; i < MAX_ITEMS; i++) {
+        for (int i = 0; i < MAX_ITEMS; i++)
+        {
             printf("%d - %s - price: %d$\n", i, item[i], item_price[i]);
         }
 
@@ -126,23 +134,29 @@ void computer_func() {
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
-        if (choice == -1) {
+        if (choice == -1)
+        {
             break; // Exit the loop if -1 is entered
         }
 
-        if (choice >= 0 && choice < MAX_ITEMS) {
+        if (choice >= 0 && choice < MAX_ITEMS)
+        {
             printf("Added to cart: %s\n", item[choice]);
-            cart[choice]++; // Increase the count of selected item in the cart
+            cart[choice]++;                   // Increase the count of selected item in the cart
             cart_price += item_price[choice]; // Update cart price
-        } else {
+        }
+        else
+        {
             printf("Invalid choice. Please try again.\n");
         }
     }
 
     // Display the items in the cart
     printf("Items in the cart:\n");
-    for (int i = 0; i < MAX_ITEMS; i++) {
-        if (cart[i] > 0) {
+    for (int i = 0; i < MAX_ITEMS; i++)
+    {
+        if (cart[i] > 0)
+        {
             printf("%d - %s (Quantity: %d)\n", i, item[i], cart[i]);
         }
     }
