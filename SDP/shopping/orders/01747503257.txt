@@ -1,0 +1,20 @@
+Mobile: 01747503257
+
+*******************************
+Items in the cart:
+
+Mobile Phones:
+	Xiaomi Redmi K50 Ultra  - quantity: 2 - total price: 90000 TK
+	Samsung Galaxy S24 Ultra  - quantity: 3 - total price: 731997 TK
+
+Laptops:
+	Apple MacBook Air Apple M1 chip with 8GB RAM  - quantity: 4 - total price: 400000 TK
+
+Keyboard & Mouse:
+	Ajazz AK820 Mechanical Keyboard  - quantity: 2 - total price: 8000 TK
+	Havit KB2006 USB Exquisite Keyboard  - quantity: 2 - total price: 1040 TK
+	Rapoo NK2600 Wired Keyboard with Bangla  - quantity: 1 - total price: 700 TK
+	Logitech MK220 Wireless Combo Keyboard  - quantity: 2 - total price: 4100 TK
+
+
+	Total price is: 1235837 TK
