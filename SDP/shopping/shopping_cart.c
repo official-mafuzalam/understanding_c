@@ -48,7 +48,7 @@ int main()
         print_func("1. Mobile \n");
         print_func("2. Computer & Laptop \n");
         print_func("3. Keyboard & Mouse \n");
-        // print_func("4. Scanner & Printer \n");
+        print_func("4. Headphone \n");
         print_func("5. Check out & Exit \n");
 
         print_func("Enter your choice: ");
@@ -67,6 +67,10 @@ int main()
 
         case 3:
             keyboard_func();
+            break;
+
+        case 4:
+            headphone_func();
             break;
 
         case 5:
@@ -129,6 +133,23 @@ void read_keyboard_items()
     for (int i = 0; i < MAX_ITEMS_KEYBOARD && !feof(file); i++)
     {
         fscanf(file, "%[^-] - %d\n", keyboard_item[i], &keyboard_price[i]);
+    }
+
+    fclose(file);
+}
+
+void read_headphone_items()
+{
+    FILE *file = fopen("products/headphone.txt", "r");
+    if (file == NULL)
+    {
+        printf("Error opening file!\n");
+        return;
+    }
+
+    for (int i = 0; i < MAX_ITEMS_HEADPHONE && !feof(file); i++)
+    {
+        fscanf(file, "%[^-] - %d\n", headphone_item[i], &headphone_price[i]);
     }
 
     fclose(file);
@@ -248,11 +269,49 @@ void keyboard_func()
     }
 }
 
+void headphone_func()
+{
+    read_headphone_items();
+
+    print_func("Headphone:");
+
+    while (1)
+    {
+        star_print();
+        print_func("Choose your Headphone or enter -1 to main menu: \n");
+
+        for (int i = 0; i < MAX_ITEMS_HEADPHONE; i++)
+        {
+            printf("\t%d - %s - price: %d TK\n", i, headphone_item[i], headphone_price[i]);
+        }
+
+        int choice;
+        print_func("Enter your choice: ");
+        scanf("%d", &choice);
+
+        if (choice == -1)
+        {
+            break; // Exit the loop if -1 is entered
+        }
+
+        if (choice >= 0 && choice < MAX_ITEMS_HEADPHONE)
+        {
+            printf("\tAdded to cart: %s\n", headphone_item[choice]);
+            headphone_cart[choice]++;                        // Increase the count of selected item in the cart
+            headphone_cart_price += headphone_price[choice]; // Update cart price
+        }
+        else
+        {
+            print_func("Invalid choice. Please try again.\n");
+        }
+    }
+}
+
 void cart_show()
 {
     int cart_empty = 1; // Flag to check if the cart is empty
 
-    int total_price = mobile_cart_price + laptop_cart_price + keyboard_cart_price;
+    int total_price = mobile_cart_price + laptop_cart_price + keyboard_cart_price + headphone_cart_price;
 
     print_func("Items in the cart:\n");
 
@@ -285,6 +344,17 @@ void cart_show()
         if (keyboard_cart[i] > 0)
         {
             printf("\t%s - quantity: %d - total price: %d TK\n", keyboard_item[i], keyboard_cart[i], keyboard_cart[i] * keyboard_price[i]);
+            cart_empty = 0; // Cart is not empty
+        }
+    }
+
+    // Display Headphone in the cart
+    print_func("Headphone:\n");
+    for (int i = 0; i < MAX_ITEMS_HEADPHONE; i++)
+    {
+        if (headphone_cart[i] > 0)
+        {
+            printf("\t%s - quantity: %d - total price: %d TK\n", headphone_item[i], headphone_cart[i], headphone_cart[i] * headphone_price[i]);
             cart_empty = 0; // Cart is not empty
         }
     }
@@ -343,6 +413,16 @@ void cart_show()
             if (keyboard_cart[i] > 0)
             {
                 fprintf(fInvoice, "\t%s - quantity: %d - total price: %d TK\n", keyboard_item[i], keyboard_cart[i], keyboard_cart[i] * keyboard_price[i]);
+            }
+        }
+
+        // Display Headphone in the cart
+        fprintf(fInvoice, "\nHeadphone:\n");
+        for (int i = 0; i < MAX_ITEMS_HEADPHONE; i++)
+        {
+            if (headphone_cart[i] > 0)
+            {
+                fprintf(fInvoice, "\t%s - quantity: %d - total price: %d TK\n", headphone_item[i], headphone_cart[i], headphone_cart[i] * headphone_price[i]);
             }
         }
 
