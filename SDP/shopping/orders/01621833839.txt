@@ -1,0 +1,43 @@
+Mobile: 01621833839
+
+*******************************
+Items in the cart:
+
+Mobile Phones:
+	Xiaomi Redmi K50 Ultra  - quantity: 2 - total price: 90000 TK
+	Samsung Galaxy S24 Ultra  - quantity: 1 - total price: 243999 TK
+	Apple iPhone 15 Pro Max  - quantity: 1 - total price: 219999 TK
+	Vivo V30  - quantity: 1 - total price: 59999 TK
+	Realme 12 Pro  - quantity: 1 - total price: 36000 TK
+	Oppo F25 Pro  - quantity: 1 - total price: 35000 TK
+	Google Pixel 7a  - quantity: 1 - total price: 48000 TK
+
+Laptops:
+	Apple MacBook Air Apple M1 chip with 8GB RAM  - quantity: 1 - total price: 100000 TK
+	Lenovo IdeaPad 1 14AMN7 AMD Ryzen 5 14" with DDR5 RAM  - quantity: 1 - total price: 60000 TK
+	Microsoft Surface Go 3 Pentium Gold 6500Y 10.5"  - quantity: 2 - total price: 194000 TK
+	HP 14 - quantity: 1 - total price: 0 TK
+	ep0160TU Core i3 13th Gen 14" FHD Laptop  - quantity: 1 - total price: 65800 TK
+	Dell Latitude 3430 Core i3 12th Gen 14" FHD Laptop  - quantity: 1 - total price: 65500 TK
+	Asus VivoBook Go 15 E1504FA Ryzen 3 7320U 15.6" FHD Laptop  - quantity: 1 - total price: 62000 TK
+
+Keyboard & Mouse:
+	Ajazz AK820 Mechanical Keyboard  - quantity: 1 - total price: 4000 TK
+	Havit KB2006 USB Exquisite Keyboard  - quantity: 1 - total price: 520 TK
+	Rapoo NK2600 Wired Keyboard with Bangla  - quantity: 1 - total price: 700 TK
+	Rapoo X1800S Wireless Optical Mouse & Keyboard Combo  - quantity: 1 - total price: 1750 TK
+	Logitech MK220 Wireless Combo Keyboard  - quantity: 1 - total price: 2050 TK
+	Gigabyte KM6300 USB Multimedia Keyboard Mouse Combo Black  - quantity: 1 - total price: 850 TK
+
+Headphone:
+	Havit i62 Bluetooth 90 Degree Ergonomic Design Headphone  - quantity: 1 - total price: 1750 TK
+	Logitech H111 STEREO Headset (One port)  - quantity: 1 - total price: 1000 TK
+	Corsair HS55 Stereo 3.5mm Wired Gaming Headphone Carbon  - quantity: 1 - total price: 5200 TK
+	GIGABYTE AORUS H1 7.1 Surround Sound Wired Gaming Headset  - quantity: 2 - total price: 7400 TK
+	Yison Celebrat A18 Bluetooth Headphone  - quantity: 1 - total price: 1800 TK
+	MeeTion MT HP020 Backlit Gaming Headset  - quantity: 1 - total price: 1400 TK
+	Edifier STAX SPIRIT S3 Wireless Over Ear Headphone  - quantity: 1 - total price: 25500 TK
+	Asus Cerberus V2 3.5mm gaming Headphone  - quantity: 1 - total price: 6500 TK
+
+
+	Total price is: 1340717 TK
